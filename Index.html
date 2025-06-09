@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Les Aventuriers du Rail</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>Les Aventuriers du Rail</h1>
+    </header>
+
+    <div id="board">
+      <!-- Plateau du jeu -->
+      <img src="images/plateau.png" alt="Plateau de jeu" id="map">
+    </div>
+
+    <div id="sidebar">
+      <section id="players">
+        <h2>Joueurs</h2>
+        <div id="player-list">
+          <!-- Informations des joueurs -->
+        </div>
+      </section>
+
+      <section id="visible-cards">
+        <h2>Cartes visibles</h2>
+        <div id="cards-row">
+          <!-- Cartes visibles -->
+        </div>
+      </section>
+
+      <section id="actions">
+        <button id="draw-card">Piocher une carte</button>
+        <button id="end-turn">Fin du tour</button>
+      </section>
+    </div>
+  </div>
+
+  <script src="jeu.js"></script>
+</body>
+</html>

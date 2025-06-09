@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Conteneur principal */
+#game-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* En-tête */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#board {
+  flex: 3;
+  overflow: auto;
+  position: relative;
+  margin-top: 60px;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  display: block;
+}
+
+/* Sidebar */
+#sidebar {
+  flex: 1;
+  background-color: #ffffff;
+  border-left: 2px solid #ccc;
+  padding: 20px;
+  overflow-y: auto;
+  margin-top: 60px;
+}
+
+/* Sections */
+#sidebar section {
+  margin-bottom: 30px;
+}
+
+#sidebar h2 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+}
+
+/* Cartes visibles */
+#cards-row {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  width: 60px;
+  height: 90px;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Actions */
+#actions button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#actions button:hover {
+  background-color: #0055aa;
+}
+
+/* Joueurs */
+#player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #0066cc;
+  border-radius: 4px;
+}
